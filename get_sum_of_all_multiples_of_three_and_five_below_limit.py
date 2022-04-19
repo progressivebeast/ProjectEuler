@@ -22,4 +22,5 @@ print(summa)
 
 # With list comprehension
 
-print(sum([x for x in list(range(1,limit)) if x % 3 == 0 or x % 5 == 0]))
+def get_sum_of_all_multiples_of_three_and_five_below_limit(limit):
+    return sum([x for x in list(range(1,limit)) if x % 3 == 0 or x % 5 == 0])
