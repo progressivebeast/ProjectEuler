@@ -23,4 +23,9 @@ print(summa)
 # With list comprehension
 
 def get_sum_of_all_multiples_of_three_and_five_below_limit(limit):
-    return sum([x for x in list(range(1,limit)) if x % 3 == 0 or x % 5 == 0])
+    try:
+        return sum([x for x in list(range(1, limit)) if x % 3 == 0 or x % 5 == 0])
+
+    except:
+        print('Parameter must be a number!')
+        return 0
