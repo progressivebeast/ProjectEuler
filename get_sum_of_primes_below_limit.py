@@ -19,4 +19,6 @@ def get_sum_of_primes_below_limit(limit):
         return summa
     except:
         print('Parameter limit must be a number!')
+
+    finally:
         return summa

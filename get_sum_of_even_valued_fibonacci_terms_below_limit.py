@@ -12,12 +12,15 @@ def get_sum_of_even_valued_fibonacci_terms_below_limit(limit):
     a = 1
     b = 2
     summa = 0
+    try:
+        while (a < limit):
+            if a % 2 == 0:
+                summa += a
+            temp = a
+            a = b
+            b = temp + a
+    except:
+        print('Parameter limit must be a number!')
 
-    while (a < limit):
-        if a % 2 == 0:
-            summa += a
-        temp = a
-        a = b
-        b = temp + a
-
-    return summa
+    finally:
+        return summa

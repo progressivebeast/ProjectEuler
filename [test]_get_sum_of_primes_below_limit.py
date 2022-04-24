@@ -2,7 +2,7 @@ import unittest
 from get_sum_of_primes_below_limit import get_sum_of_primes_below_limit
 
 
-class TestIsPrime(unittest.TestCase):
+class Test_get_sum_of_primes_below_limit(unittest.TestCase):
 
     def test_with_number(self):
         self.assertEqual(get_sum_of_primes_below_limit(10), 17)
