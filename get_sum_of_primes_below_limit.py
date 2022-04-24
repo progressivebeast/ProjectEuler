@@ -8,10 +8,15 @@
 
 from is_prime import is_prime
 
+
 def get_sum_of_primes_below_limit(limit):
     summa = 0
-    for x in range(1,limit):
-        if (is_prime(x) == True):
-            summa += x
+    try:
+        for x in range(1, limit):
+            if (is_prime(x) == True):
+                summa += x
 
-    return summa
+        return summa
+    except:
+        print('Parameter limit must be a number!')
+        return summa
